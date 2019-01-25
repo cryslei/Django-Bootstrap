@@ -1,0 +1,119 @@
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type" />
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="margin: 0 auto">
+	<tr>
+		<td colspan="2">
+                                {% load static %}
+                                <img src="{% static "sistema/confea_Logo.jpg" %}" style="width:115px;height:50px">
+                                <img src="{% static "sistema/CREA_Logo.jpg" %}" style="width:115px;height:50px">
+                                <img src="{% static "sistema/mutua_Logo.jpg" %}" style="width:115px;height:50px">
+			<!-- <img src="imagens/confea_Logo.jpg" style="width:115px;height:50px">
+			<img src="imagens/CREA_Logo.jpg" style="width:100px;height:50px">
+			<img src="imagens/mutua_Logo.jpg" style="width:120px;height:50px"> -->
+		</td>
+		<th colspan="2" style="width:300px">
+			<p align="center" >{{relatorio.setor}}</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="width:120px">
+			<p align="justify">Referencia</p>
+		</td>
+		<td style="width:120px">
+			<p align="center">Rev</p>
+		</td>
+		<td style="width:180px">
+			<p align="justify">   Data de Aprova&ccedil;&atilde;o</p>
+		</td>
+	</tr>
+</table>
+
+
+<p style="margin-left: 40px;">
+        Relat&oacute;rio <strong>n&ordm;</strong><strong> {{relatorio.id}}</strong></p>
+<p align="center">
+        &nbsp;</p>
+<p align="center">
+        <span style="font-size:14px;"><strong>Relat&oacute;rio T&eacute;cnico</strong></span></p>
+<p align="right">
+        &nbsp;</p>
+<p align="right">
+        &nbsp;</p>
+<p align="right">
+        &nbsp;</p>
+<p align="right">
+        <span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Palmas &ndash; TO, {{relatorio.data_retorno}}.</span></p>
+<p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p style="text-align: center;">
+        <span style="font-size:16px;"><strong>Departamento de inform&aacute;tica</strong></span></p>
+<table border="1" cellpadding="0" cellspacing="0" style="margin: 0 auto">
+        <tbody>
+                <tr>
+                        <td style="width:104px;">
+                                <p>
+                                        <strong>Equipamento:</strong></p>
+                        </td>
+                        <td colspan="5" style="width:492px;">
+                                <p>{{ relatorio.nome}}</p>
+                        </td>
+                </tr>
+                <tr>
+                        <td style="width:104px;">
+                                <p>
+                                        <strong>Patrim&ocirc;nio:</strong></p>
+                        </td>
+                        <td style="width:86px;">
+                                <p>{{ relatorio.patrimonio }}</p>
+                        </td>
+                        <td style="width:34px;">
+                                <p>
+                                        <strong>S/N:</strong></p>
+                        </td>
+                        <td style="width:179px;">
+                                <p>
+                                        S/N</p>
+                        </td>
+                        <td style="width:68px;">
+                                <p>
+                                        <strong>Data:</strong></p>
+                        </td>
+                        <td style="width:130px;">
+                                <p>{{ relatorio.data_saida }}</p>
+                        </td>
+                </tr>
+                <tr>
+                        <td style="width:104px;">
+                                <p align="center">
+                                        <strong>Defeito Informado</strong></p>
+                                <p align="center">
+                                        <strong>do equipamento</strong></p>
+                        </td>
+                        <td colspan="5" style="width:492px;">
+                                <p>{{ relatorio.descricao }}</p>
+                        </td>
+                </tr>
+        </tbody>
+</table>
+<p>
+        &nbsp;</p>
+<p align="center">
+        &nbsp;</p>
+<p align="center">
+        A equipe t&eacute;cnica da Divis&atilde;o de Inform&aacute;tica do CREA-TO.</p>
+<p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p align="center">
+        ___________________________________________</p>
+<p align="center">
+        <strong>{{relatorio.tecnico}}</strong></p>
+<p align="center">
+        Divis&atilde;o de Inform&aacute;tica</p>

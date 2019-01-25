@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CREA-TO</title>      
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style type="text/css" media="screen">
+    *  {
+      margin:0;
+      padding:0;
+    }
+    
+    html, body {height:100%;}
+    
+    .geral {
+      min-height:100%;
+      position:relative;
+      width:800px;
+    }
+    
+    .footer {
+      position:absolute;
+      bottom:0;
+      width:100%;
+    }
+    
+    .content {overflow:hidden;}
+    .aside {width:200px;}
+    .fleft {float:left;}
+    .fright {float:right;}
+</style>
+
+</head>
+
+<body align="center" style="background-color:#EDF0F0"><br><br>
+  {% load static %}
+  <img src="{% static "sistema/CREA_Logo.jpg" %}" style="width:200px;height:80px"><br><br><br><br><br><br>
+  <!--
+    <h1>CREA-TO</h1><br><br><br><br><br><br>
+  -->
+  <div class="btn-group btn-group-vertical">
+    <a href="relatorio/" class="btn btn-info" role="button" >VISUALIZAR RELATORIOS</a>
+    <a href="/login/sistema/categoria/add/" class="btn btn-info" role="button">CADASTRAR CATEGORIAS</a>
+    <a href="/login/sistema/setor/add/" class="btn btn-info" role="button">CADASTRAR SETORES</a>
+    <a href="/login/sistema/relatorio/add/" class="btn btn-info" role="button">CADASTRAR RELATORIOS</a>
+  </div>
+
+<div class="footer"><p align='center'>CREA-TO &copy; 2019</p></div>           
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src= "js/Bootstrap.min.js" ></script>
+</body>
+</html>
